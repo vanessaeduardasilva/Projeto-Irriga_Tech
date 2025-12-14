@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Irrigação</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container principal, dividindo a tela em duas partes -->
+    <div class="container">
+        <!-- Lado esquerdo com imagem -->
+        <div class="container_img"></div>
+        
+        <!-- Lado direito com conteúdo -->
+        <div class="right">
+            <header>
+                <h1><strong>Irriga Tech</strong></h1>
+            </header>
+            <div class="container_inter">
+                <div class="informacoes">
+                    <h3>
+                        Bem-vindo ao sistema de monitoramento de umidade da Irriga Tech.
+                    </h3>
+                    <br>
+                    <p>
+                        Neste ambiente você poderá monitorar em tempo real o status de irrigação do seu sistema.
+                    </p>
+                    <p>A caixa ao lado exibe os dados enviados pelo sensor e o gráfico mostra de forma visual a situação da umidade com relação à necessidade da planta.</p>
+                </div>
+                                  
+                <div class="sensor-data">
+                    <h2>Dados do Sensor</h2>
+                    <p><strong>Umidade do Solo:</strong> <span id="humidity">Carregando...</span></p>
+                </div>
+                <div class="pie-chart">
+                    <div class="pie-fill"></div>
+                    <div class="pie-center">0%</div>
+                </div>  
+            </div>
+            <footer>
+                <p>&copy; 2024 - Monitoramento de Irrigação</p>
+            </footer>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
